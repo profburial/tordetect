@@ -10,7 +10,9 @@ for more serious applications.
 
 ## Installation
 
+```
 composer require proburial/tordetect 1.0
+```
 
 ## Usage
 
@@ -48,6 +50,12 @@ $check = (new ProfBurial\TorDetect\Client(
 
 ## Tests
 
-Unit: ```phpunit tests/ClientUnitTest.php```
+Unit: 
+```
+phpunit tests/ClientUnitTest.php
+```
 
-Integration: ```phpunit tests/ClientIntegration.php```
+Integration: 
+```
+phpunit tests/ClientIntegration.php
+```
