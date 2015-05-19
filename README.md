@@ -10,14 +10,13 @@ for more serious applications.
 
 ## Installation
 
-```composer require proburial/tor 1.0```
+composer require proburial/tor 1.0
 
 ## Usage
 
 Create a writable json file to store your ip data.
 
 ```php
-
 // Get a list of Tor exit nodes
 $ips = (new ProfBurial\Tor\Client(
     __DIR__."/_data/torexitnodes.json", // File for storing ips
