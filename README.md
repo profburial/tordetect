@@ -57,5 +57,5 @@ phpunit tests/ClientUnitTest.php
 
 Integration: 
 ```
-phpunit tests/ClientIntegration.php
+phpunit tests/ClientIntegrationTest.php
 ```
