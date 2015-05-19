@@ -1,7 +1,7 @@
-<?php namespace ProfBurial\Tor;
+<?php namespace ProfBurial\TorDetect;
 
 use Mockery as m;
-use ProfBurial\Tor\Client;
+use ProfBurial\TorDetect\Client;
 
 // Mock php functions
 function is_writable($file)
@@ -100,7 +100,7 @@ class ClientUnitTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException ProfBurial\Tor\FileNotWritten
+     * @expectedException ProfBurial\TorDetect\FileNotWritten
      * @expectedExceptionMessage '/Users/profburial/data/data.json' could not be updated.
      */
     public function testGetUpdateFileNotWrittenFails()
@@ -178,7 +178,7 @@ class ClientUnitTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException ProfBurial\Tor\InvalidFile
+     * @expectedException ProfBurial\TorDetect\InvalidFile
      * @expectedExceptionMessage Invalid File: '/Users/profburial/data/data.json'. Make sure it exists and is writable.
      */
     public function testGetCheckFileFailsNotWritable()
@@ -297,7 +297,7 @@ class ClientUnitTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException ProfBurial\Tor\InvalidIpAddress
+     * @expectedException ProfBurial\TorDetect\InvalidIpAddress
      * @expectedExceptionMessage boobs is not a valid ip address.
      */
     public function testCheckIpValidIpFails()

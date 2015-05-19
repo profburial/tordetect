@@ -6,11 +6,11 @@ I love Tor and most everything it represents. However, in certain use cases, peo
 
 You probably shouldn't use this lib as is if you are wanting to do anything serious. 
 It maintains a json file with a list of Tor exit nodes that should be stored elsewhere 
-for more serious applications. 
+for more serious applications.
 
 ## Installation
 
-composer require proburial/tor 1.0
+composer require proburial/tordetect 1.0
 
 ## Usage
 
@@ -18,7 +18,7 @@ Create a writable json file to store your ip data.
 
 ```php
 // Get a list of Tor exit nodes
-$ips = (new ProfBurial\Tor\Client(
+$ips = (new ProfBurial\TorDetect\Client(
     __DIR__."/_data/torexitnodes.json", // File for storing ips
     24 // Update every 24 hours
 ))->get();
@@ -36,7 +36,7 @@ $ips = (new ProfBurial\Tor\Client(
 // }
 
 // Check an ip address against your list of exit nodes
-$check = (new ProfBurial\Tor\Client(
+$check = (new ProfBurial\TorDetect\Client(
     __DIR__."/_data/torexitnodes.json", // File for storing ips
     24 // Update every 24 hours
 ))->check('127.0.0.1');

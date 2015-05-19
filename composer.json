@@ -1,5 +1,5 @@
 {
-    "name": "profburial/tor",
+    "name": "profburial/tordetect",
     "description": "Easily detect tor users.",
     "keywords": ["tor"],
     "license": "MIT",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ProfBurial\\Tor\\": "src/"
+            "ProfBurial\\TorDetect\\": "src/"
         }
     },
     "minimum-stability": "dev"

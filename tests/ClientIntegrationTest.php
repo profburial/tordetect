@@ -1,6 +1,6 @@
 <?php
 
-use ProfBurial\Tor\Client;
+use ProfBurial\TorDetect\Client;
 
 class ClientIntegrationTest extends \PHPUnit_Framework_TestCase {
 
@@ -36,7 +36,7 @@ class ClientIntegrationTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException ProfBurial\Tor\InvalidFile
+     * @expectedException ProfBurial\TorDetect\InvalidFile
      */
     public function testGetCheckFileFailsNotWritable()
     {
@@ -61,7 +61,7 @@ class ClientIntegrationTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException ProfBurial\Tor\InvalidIpAddress
+     * @expectedException ProfBurial\TorDetect\InvalidIpAddress
      * @expectedExceptionMessage boobs is not a valid ip address.
      */
     public function testCheckIpValidIpFails()

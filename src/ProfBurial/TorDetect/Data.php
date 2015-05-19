@@ -1,4 +1,4 @@
-<?php namespace ProfBurial\Tor;
+<?php namespace ProfBurial\TorDetect;
 
 /**
  * ---------------------------
