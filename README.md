@@ -24,8 +24,6 @@ $ips = (new ProfBurial\Tor\Client(
     24 // Update every 24 hours
 ))->get();
 
-// Returns:
-//
 // array(1067) {
 //   [0]=>
 //   string(13) "1.169.207.157"
@@ -44,8 +42,6 @@ $check = (new ProfBurial\Tor\Client(
     24 // Update every 24 hours
 ))->check('127.0.0.1');
 
-// Returns: 
-//
 // bool(false) if not found
 // '127.0.0.1' if found
 
@@ -54,4 +50,5 @@ $check = (new ProfBurial\Tor\Client(
 ## Tests
 
 Unit: ```phpunit tests/ClientUnitTest.php```
+
 Integration: ```phpunit tests/ClientIntegration.php```
