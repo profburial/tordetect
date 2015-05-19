@@ -1,0 +1,8 @@
+.idea
+/vendor
+composer.phar
+composer.lock
+.DS_Store
+Thumbs.db
+tests/_data/*
+!tests/_data/.gitkeep
