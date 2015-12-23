@@ -6,3 +6,4 @@ composer.lock
 Thumbs.db
 tests/_data/*
 !tests/_data/.gitkeep
+php_errors.log

@@ -65,7 +65,7 @@ class Data {
             return true;
         } else {
             throw new InvalidFile(
-                "Invalid File: '". $file . "'. Make sure it exists and is writable.",
+                "Invalid File. Make sure it exists and is writable.",
                 400
             );
         }
@@ -105,7 +105,7 @@ class Data {
         $f = fopen($file, 'w+');
         if(!fwrite($f, $this->getIps()))
         {
-            throw new FileNotWritten("'". $file ."' could not be updated.");
+            throw new FileNotWritten("File could not be updated.");
         }
 
         // Close file

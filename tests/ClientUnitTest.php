@@ -101,7 +101,7 @@ class ClientUnitTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @expectedException ProfBurial\TorDetect\FileNotWritten
-     * @expectedExceptionMessage '/Users/profburial/data/data.json' could not be updated.
+     * @expectedExceptionMessage File could not be updated.
      */
     public function testGetUpdateFileNotWrittenFails()
     {
@@ -179,7 +179,7 @@ class ClientUnitTest extends \PHPUnit_Framework_TestCase {
 
     /**
      * @expectedException ProfBurial\TorDetect\InvalidFile
-     * @expectedExceptionMessage Invalid File: '/Users/profburial/data/data.json'. Make sure it exists and is writable.
+     * @expectedExceptionMessage Invalid File. Make sure it exists and is writable.
      */
     public function testGetCheckFileFailsNotWritable()
     {
