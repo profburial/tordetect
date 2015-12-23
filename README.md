@@ -11,7 +11,7 @@ for more serious applications.
 ## Installation
 
 ```
-composer require proburial/tordetect 1.0
+composer require proburial/tordetect 1.1
 ```
 
 ## Usage
