@@ -8,10 +8,14 @@ You probably shouldn't use this lib as is if you are wanting to do anything seri
 It maintains a json file with a list of Tor exit nodes that should be stored elsewhere 
 for more serious applications.
 
+## Support
+
+If you use this library or it's components in a commercial project please consider a [moral license](https://www.creatorlove.com/terry-harmon/tor-detect)
+
 ## Installation
 
 ```
-composer require proburial/tordetect 1.1
+composer require profburial/tordetect 1.1
 ```
 
 ## Usage
